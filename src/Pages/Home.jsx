@@ -10,7 +10,7 @@ const Home = () => {
           <div className="absolute z-10 text-center text-white">
             <h1 className="text-4xl font-bold md:text-6xl lg:text-8xl text-lime-200">WELCOME</h1>
             <h1 className="mt-2 text-4xl font-bold md:text-6xl lg:text-8xl text-lime-200 " >TO</h1>
-            <h1 className="mt-2 text-4xl font-bold md:text-6xl lg:text-8xl text-cyan-300">SKCLOTHY</h1>
+            <h1 className="mt-2 text-4xl font-bold md:text-6xl lg:text-8xl text-cyan-300">SS CLOTHY</h1>
           </div>
           <img
             src="\Home\wp6326224-mens-fashion-wallpapers.jpg"

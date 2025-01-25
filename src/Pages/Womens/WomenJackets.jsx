@@ -1,19 +1,25 @@
 import React from "react";
+import WomenJacketJson from "../../Json/Women/jackets.json";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../SLICES/cartSlice";
+const WomenJackets = () => {
+  const divs = ["div1", "div2", "div3", "div5", "div6", "div7"];
 
-import ShirtJson from "../../Json/Men/shirts.json";
+  const dispatch = useDispatch();
 
-const Shirts = () => {
-const divs=["div1","div2","div3","div5","div6","div7"]
+  const handleAddTocart = (items) => {
+    dispatch(addToCart(items));
+  };
+
   return (
     <div id="accessories">
-      
       <div className="parent">
-        {
-          ShirtJson.map((shirts,index) => {
-            return <div key={shirts.pid} className={divs[index]}>
-              <img src={shirts.image} alt="" />
-              <h1>{shirts.pname}</h1>
-              <p>Price: ₹{shirts.price}</p>
+        {WomenJacketJson.map((WomenJacket, index) => {
+          return (
+            <div key={WomenJacket.pid} className={divs[index]}>
+              <img src={WomenJacket.image} alt="" />
+              <h1>{WomenJacket.pname}</h1>
+              <p>Price: ₹{WomenJacket.price}</p>
               <div
                 style={{
                   display: "flex",
@@ -30,7 +36,7 @@ const divs=["div1","div2","div3","div5","div6","div7"]
                     padding: "3px",
                     width: "100px",
                   }}
-                  onClick={() => handleAddTocart(shirts)}
+                  onClick={() => handleAddTocart(WomenJacket)}
                 >
                   Cart <sup>+</sup>{" "}
                 </button>
@@ -47,11 +53,11 @@ const divs=["div1","div2","div3","div5","div6","div7"]
                 </button>
               </div>
             </div>
-          })
-       }
+          );
+        })}
       </div>
     </div>
   );
 };
 
-export default Shirts;
+export default WomenJackets;

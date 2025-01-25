@@ -21,8 +21,8 @@ const Men = () => {
         </div>
         <div class="div3">
           <img src={hoodies} alt="" />
-          <Link to="/men/hoodies"></Link>
-          HOODIES
+          <Link to="/men/hoodies">HOODIES</Link>
+          
         </div>
         <div class="div5">
           <img src={jackets} alt="" />

@@ -18,6 +18,12 @@ import Jackets from "./Pages/Mens/Jackets"
 import Accessories from "./Pages/Mens/Accessories"
 import Hoodies from './Pages/Mens/Hoodies.jsx'
 import Blazzers from "./Pages/Mens/Blazzers.jsx";
+import WomenJackets from "./Pages/Womens/WomenJackets.jsx";
+import WomenShirts from "./Pages/Womens/WomenShirts.jsx";
+import WomenTops from "./Pages/Womens/WomenTops.jsx";
+import WomenKurti from "./Pages/Womens/WomenKurti.jsx";
+import WomenSaree from "./Pages/Womens/WomenSaree.jsx";
+import WomenKpop from "./Pages/Womens/WomenKpop.jsx";
 const App = () => {
   return (
     <div id="App">
@@ -33,6 +39,12 @@ const App = () => {
           <Route path="/men/accessories" element={<Accessories />}></Route>
           <Route path="/men/blazzers" element={<Blazzers/>}></Route>
           <Route path="/women" element={<Women />}></Route>
+          <Route path="/women/jackets" element={<WomenJackets/>} ></Route>
+          <Route path="/women/shirts" element={<WomenShirts/>} ></Route>
+          <Route path="/women/tops" element={<WomenTops/>} ></Route>
+          <Route path="/women/kurti" element={<WomenKurti/>} ></Route>
+          <Route path="/women/saree" element={<WomenSaree/>} ></Route>
+          <Route path="/women/kpop" element={<WomenKpop/>} ></Route>
           <Route path="/kids" element={<Kids />}></Route>
           <Route path="/sports" element={<Sports/>}></Route>
           <Route path="/signin" element={<SignIn />}></Route>
